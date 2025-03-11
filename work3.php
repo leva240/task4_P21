@@ -5,11 +5,11 @@ $students = [
  ['name' => 'Олег', 'age' => 21, 'grades' => [4, 5, 4, 4, 4, 3, 3, 4, 4]], 
 ];
 
-function Ocenka($students) {
+function ocenka($students) {
 $average = array_sum($students['grades']) / count($students['grades']);
 }
 if ($average >= 4) {
-$average = Ocenka($students);
+$average = ocenka($students);
 
 echo "{$student['name']}Средняя оценка: " . round($average, 2);
 }
